@@ -1,0 +1,32 @@
+﻿<div class="row" ng-controller="categoriesCtrl">
+    <h2>Categories</h2>
+    <br />    
+    
+    <div id="categories">
+        <ul>
+            <li ng-repeat="category in categories | filter:query">
+                {{category.name}}
+            </li>
+        </ul>
+    </div>
+    <br />
+
+</div>
+<div class="row" ng-controller="inventoryCtrl">
+    <h2>Inventory</h2>
+    <br />
+    <input ng-model="query" />
+    <br />
+    <select ng-model="orderProp">
+        <option value="price">By price from the biggest</option>
+    </select>
+    <div id="inventory">
+        <ul>
+            <li ng-repeat="item in items | filter: { title : query} | filter : {price : currency} | orderBy : orderProp">
+                <span>{{item.title}} - {{item.price}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+

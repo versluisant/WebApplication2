@@ -1,0 +1,24 @@
+﻿{
+    "items": [
+        {
+            "sku": "SKU1",
+            "title": "harry potter book 11",
+            "price": 10
+        },
+        {
+            "sku": "SKU4",
+            "title": "harry potter book 4",
+            "price": 20
+        },
+        {
+            "sku": "SKU2",
+            "title": "harry potter book 2",
+            "price": 10.99
+        },
+        {
+            "sku": "SKU3",
+            "title": "harry potter book 3",
+            "price": 0.99
+        }
+    ]
+}
